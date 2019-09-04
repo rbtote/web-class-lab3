@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  	display: flex;
+  	flex-direction: row;
+  	border-top: solid;
+  	border-width: 1px;
+}
+
+.social{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.social > li{
+	padding: 20px;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.navbar{
+	background-color: #616161;
+}
+
+.hamburger{
+	color: white;
+}
+
+.menu{
+	list-style: none;
+	background-color: #616161;
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menu > li {
+	float: right;
+	padding: 20px;
+}
+
+.menu > li:hover{
+	cursor: pointer;
+	background-color: #999;
+}
+
+.product{
+	border: solid;
+	border-width: 1px;
+	border-color: #bdbdbd;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 599px) {
+  header{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  main{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  .menu{
+  	display: none;
+  }
+
+  .hamburger{
+  	margin-left: auto;
+  	margin-right: 0;
+  }
+
+  .navbar{
+  	display: flex;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  header{
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+  .logo{
+  	position: absolute;
+  	left: 15%;
+  }
+
+  main{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  .menu{
+  	display: none;
+  }
+
+  .hamburger{
+  	margin-left: auto;
+  	margin-right: 0;
+  }
+
+  .navbar{
+  	display: flex;
+  }
+}
+
+@media (min-width: 991px) {
+  header{
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+  .logo{
+  	position: absolute;
+  	left: 20%;
+  }
+
+  main{
+  	display: flex;
+  	flex-direction: row;
+  }
+
+  .product{
+  	margin: 20px 10px;
+  	padding: 5px;
+  }
+
+  .menu{
+  	display: flex;
+  	align-items: flex-end;
+  	float: right;
+  	margin-right: 0;
+  	margin-left: auto;
+  }
+
+  .hamburger{
+  	display: none;
+  }
+
+  .navbar{
+  	display: flex;
+  	align-items: flex-end;
+  }
+}
